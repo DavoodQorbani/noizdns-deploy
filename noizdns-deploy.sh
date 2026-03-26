@@ -189,7 +189,7 @@ install_dependencies() {
             ;;
         apt)
             apt update -qq
-            DEBIAN_FRONTEND=noninteractive apt install -y curl iptables 2>/dev/null || true
+            DEBIAN_FRONTEND=noninteractive apt install -y curl iptables iptables-persistent 2>/dev/null || true
             ;;
     esac
 }
